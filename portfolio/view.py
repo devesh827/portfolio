@@ -6,8 +6,8 @@ from django.core.mail import send_mail
 import requests
 
 
-def Home(request):
-    return render(request,'Home.html')
+def index(request):
+    return render(request,'index.html')
 def sendmail(request):
     if request.method=='POST':
         email=request.POST.get("email")
