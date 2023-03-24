@@ -23,4 +23,5 @@ def sendmail(request):
         return HttpResponse("mail not sent")
 
 def pdf_view(request):
-        filepath = os.path.join('static', 'Deveshresume.pdf')
+        filepath = os.path.join('static', '/static/Deveshresume.pdf')
+        return redirect(filepath)
